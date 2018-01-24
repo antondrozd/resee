@@ -1,0 +1,37 @@
+.main-nav {
+
+}
+
+.main-nav__wrapper {
+  @include wrapper();
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ADACAC;
+}
+
+.main-nav__list {
+  @include ul-reset();
+  display: flex;
+  flex-direction: row;
+}
+
+.main-nav__item {
+  padding: 32px 0;
+  a {
+    display: block;
+    padding: 0 23px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    transition: all 0.3s;
+    &:hover {
+      position: relative;
+      color: $color-pink;
+      &::after {
+        content: "";
+        position: absolute;
+
+      }
+    }
+  }
+}

@@ -17,6 +17,7 @@ var jade = require('gulp-jade');
 
 gulp.task('jade', function() {
   gulp.src('*.jade')
+    .pipe(plumber())
     .pipe(jade())
     .pipe(gulp.dest('build'))
     .pipe(server.stream());
@@ -38,15 +39,15 @@ gulp.task('style', function() {
     .pipe(server.stream());
 });
 
-gulp.task('symbols', function() {
-  return gulp.src('build/img/icons/*.svg')
-    .pipe(svgmin())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('symbols.svg'))
-    .pipe(gulp.dest('build/img'));
-});
+// gulp.task('symbols', function() {
+//   return gulp.src('build/img/icons/*.svg')
+//     .pipe(svgmin())
+//     .pipe(svgstore({
+//       inlineSvg: true
+//     }))
+//     .pipe(rename('symbols.svg'))
+//     .pipe(gulp.dest('build/img'));
+// });
 
 gulp.task('images', function() {
   return gulp.src('build/img/**/*.{png,jpg,gif}')
@@ -103,7 +104,7 @@ gulp.task('build', function(fn) {
     'jade',
     'style',
     'images',
-    'symbols',
+    // 'symbols',
     fn
   );
 });

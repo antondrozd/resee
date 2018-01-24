@@ -1,0 +1,23 @@
+$border-width: "1.5px";
+
+.btn {
+  display: inline-flex;
+  padding: calc(17px - #{$border-width}) calc(45px - #{$border-width});
+  font-size: 12px;
+  letter-spacing: 1.85px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #363636;
+  border: #{$border-width} solid #000;
+  outline: none;
+  cursor: pointer;
+  &--pink {
+    padding: 17px 45px;
+    color: #FFFFFF;
+    background-color: $color-pink;
+    border: none;
+  }
+  svg {
+    margin-left: 15px;
+  }
+}
