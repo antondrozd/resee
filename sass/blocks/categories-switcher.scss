@@ -1,0 +1,22 @@
+.categories-switcher {
+
+}
+
+.categories-switcher__wrapper {
+  @include wrapper();
+}
+
+.categories-switcher__list {
+  @include ul-reset;
+  display: flex;
+}
+
+.categories-switcher__item {
+  flex-grow: 1;
+  a {
+    font-family: "Helvetica";
+    font-size: 14px;
+    text-decoration: none;
+    color: $color-black;
+  }
+}

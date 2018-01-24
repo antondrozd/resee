@@ -4,6 +4,7 @@ html(lang="en")
     meta(charset="UTF-8")
     title ReSee
     link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700', rel='stylesheet')
   body
     .page-wrapper
       header.page-header
@@ -11,7 +12,7 @@ html(lang="en")
           .page-header__inner
             a.page-header__logo.logo(href="#")
               img(src="img/icons/logo.png" alt="logo")
-            p.page-header__text Shop and sell the BEST from Past Collections.
+            p.page-header__text Shop and sell the BEST from Past Collections. &#x20;
               a(href="#") We Ship Globally.
           .page-header__product
             .page-header__product-img-wrapper
@@ -24,27 +25,27 @@ html(lang="en")
                 a.btn.page-header__btn(href="#") Quick view
                 a.btn.btn--pink.page-header__btn(href="#") Add to cart
               .page-header__more
-                h4.page-header__more-title
+                h4.page-header__more-title More from Prada
                 ul.page-header__more-list
                   li.page-header__more-item
                     a(href="#")
-                      img(src="" alt="clothing-item")
+                      img(src="img/product-3.png" alt="clothing-item")
                   li.page-header__more-item
                     a(href="#")
-                      img(src="" alt="clothing-item")
+                      img(src="img/product-1.png" alt="clothing-item")
                   li.page-header__more-item
                     a(href="#")
-                      img(src="" alt="clothing-item")
+                      img(src="img/product-2.png" alt="clothing-item")
                   li.page-header__more-item
                     a(href="#")
-                      img(src="" alt="clothing-item")
-                a.btn(href="#") Shop Prada
+                      img(src="img/product-3.png" alt="clothing-item")
+                a.btn.page-header__more-btn(href="#") Shop Prada
                   include icons/arrow.jade
 
       main.page-content
         nav.main-nav
           .main-nav__wrapper
-            ul.main-nav__list
+            ul.main-nav__list.main-nav__list--first
               li.main-nav__item
                 a(href="#") New
               li.main-nav__item
@@ -57,16 +58,18 @@ html(lang="en")
                 a(href="#") Accessories
               li.main-nav__item
                 a(href="#") Gifts
-            ul.main-nav__list
+            ul.main-nav__list.main-nav__list--second
               li.main-nav__item
-                a(href="#") The find
+                a(href="#") The
               li.main-nav__item
                 a(href="#") Inspiration
               li.main-nav__item
                 a(href="#") Collaborations
             .main-nav__icons
-              span.main-nav__icon
-              span.main-nav__icon
+              a.main-nav__icon(href="#")
+                include icons/search.jade
+              a.main-nav__icon(href="#")
+                include icons/basket.jade
         .categories-switcher
           .categories-switcher__wrapper
             ul.categories-switcher__list
@@ -96,66 +99,116 @@ html(lang="en")
                 a(href="#") Trench
             a.categories-switcher__more(href="#") 4 more
             a.btn(href="#") View all clothing
+              include icons/arrow.jade
+
         section.products
           .products__wrapper
             h2.products__title Clothing
             ul.products__list
               li.product-item
                 .product-item__img-wrapper
-                  img(src="", alt="clothing-item")
+                  img(src="img/product-1.png", alt="clothing-item")
+                  .product-item__overlay
+                    span.product-item__add-to-favorite
+                      include icons/add-to-favorite.jade
+                    a.btn.product-item__btn(href="#") Quick view
+                    a.btn.btn--pink.product-item__btn(href="#") Add to cart
                 .product-item__info
                   span.product-item__brand Balenciaga
-                  span.product-item__name Striped Lavaliere Blouse
-                  span.product-item__price €1400,00
+                  .product-item__info-inner
+                    span.product-item__name Striped Lavaliere Blouse
+                    span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="", alt="clothing-item")
+                  img(src="img/product-2.png", alt="clothing-item")
+                  .product-item__overlay
+                    span.product-item__add-to-favorite
+                      include icons/add-to-favorite.jade
+                    a.btn.product-item__btn(href="#") Quick view
+                    a.btn.btn--pink.product-item__btn(href="#") Add to cart
                 .product-item__info
                   span.product-item__brand Balenciaga
-                  span.product-item__name Striped Lavaliere Blouse
-                  span.product-item__price €1400,00
+                  .product-item__info-inner
+                    span.product-item__name Striped Lavaliere Blouse
+                    span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="", alt="clothing-item")
+                  img(src="img/product-3.png", alt="clothing-item")
+                  .product-item__overlay
+                    span.product-item__add-to-favorite
+                      include icons/add-to-favorite.jade
+                    a.btn.product-item__btn(href="#") Quick view
+                    a.btn.btn--pink.product-item__btn(href="#") Add to cart
                 .product-item__info
                   span.product-item__brand Saint Lauren
-                  span.product-item__name Plaid Trousers
-                  span.product-item__price €1400,00
+                  .product-item__info-inner
+                    span.product-item__name Plaid Trousers
+                    span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="", alt="clothing-item")
+                  img(src="img/product-3.png", alt="clothing-item")
+                  .product-item__overlay
+                    span.product-item__add-to-favorite
+                      include icons/add-to-favorite.jade
+                    a.btn.product-item__btn(href="#") Quick view
+                    a.btn.btn--pink.product-item__btn(href="#") Add to cart
                 .product-item__info
                   span.product-item__brand Saint Lauren
-                  span.product-item__name Plaid Trousers
-                  span.product-item__price €1400,00
+                  .product-item__info-inner
+                    span.product-item__name Plaid Trousers
+                    span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="", alt="clothing-item")
+                  img(src="img/product-1.png", alt="clothing-item")
+                  .product-item__overlay
+                    span.product-item__add-to-favorite
+                      include icons/add-to-favorite.jade
+                    a.btn.product-item__btn(href="#") Quick view
+                    a.btn.btn--pink.product-item__btn(href="#") Add to cart
                 .product-item__info
                   span.product-item__brand Balenciaga
-                  span.product-item__name Striped Lavaliere Blouse
-                  span.product-item__price €1400,00
+                  .product-item__info-inner
+                    span.product-item__name Striped Lavaliere Blouse
+                    span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="", alt="clothing-item")
+                  img(src="img/product-2.png", alt="clothing-item")
+                  .product-item__overlay
+                    span.product-item__add-to-favorite
+                      include icons/add-to-favorite.jade
+                    a.btn.product-item__btn(href="#") Quick view
+                    a.btn.btn--pink.product-item__btn(href="#") Add to cart
                 .product-item__info
                   span.product-item__brand Balenciaga
-                  span.product-item__name Striped Lavaliere Blouse
-                  span.product-item__price €1400,00
+                  .product-item__info-inner
+                    span.product-item__name Striped Lavaliere Blouse
+                    span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="", alt="clothing-item")
+                  img(src="img/product-3.png", alt="clothing-item")
+                  .product-item__overlay
+                    span.product-item__add-to-favorite
+                      include icons/add-to-favorite.jade
+                    a.btn.product-item__btn(href="#") Quick view
+                    a.btn.btn--pink.product-item__btn(href="#") Add to cart
                 .product-item__info
                   span.product-item__brand Saint Lauren
-                  span.product-item__name Plaid Trousers
-                  span.product-item__price €1400,00
+                  .product-item__info-inner
+                    span.product-item__name Plaid Trousers
+                    span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="", alt="clothing-item")
+                  img(src="img/product-3.png", alt="clothing-item")
+                  .product-item__overlay
+                    span.product-item__add-to-favorite
+                      include icons/add-to-favorite.jade
+                    a.btn.product-item__btn(href="#") Quick view
+                    a.btn.btn--pink.product-item__btn(href="#") Add to cart
                 .product-item__info
                   span.product-item__brand Saint Lauren
-                  span.product-item__name Plaid Trousers
-                  span.product-item__price €1400,00
+                  .product-item__info-inner
+                    span.product-item__name Plaid Trousers
+                    span.product-item__price €1400,00
             a.btn.products__btn(href="#") Load more
 
         section.brands
@@ -208,18 +261,20 @@ html(lang="en")
               ul.brand__products
                 li.product-item.product-item--horisontal
                   .product-item__img-wrapper
-                    img(src="", alt="clothing-item")
+                    img(src="img/product-1.png", alt="clothing-item")
                   .product-item__info
                     span.product-item__brand Botega Veneta
-                    span.product-item__name Striped Lavaliere Blouse
-                    span.product-item__price €1400,00
+                    .product-item__info-inner
+                      span.product-item__name Striped Lavaliere Blouse
+                      span.product-item__price €1400,00
                 li.product-item.product-item--horisontal
                   .product-item__img-wrapper
-                    img(src="", alt="clothing-item")
+                    img(src="img/product-1.png", alt="clothing-item")
                   .product-item__info
                     span.product-item__brand Botega Veneta
-                    span.product-item__name Striped Lavaliere Blouse
-                    span.product-item__price €1400,00
+                    .product-item__info-inner
+                      span.product-item__name Striped Lavaliere Blouse
+                      span.product-item__price €1400,00
               a.btn(href="#") 22 more products from this designer
 
         section.newsletter

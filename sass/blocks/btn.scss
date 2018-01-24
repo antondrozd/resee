@@ -2,17 +2,23 @@ $border-width: "1.5px";
 
 .btn {
   display: inline-flex;
-  padding: calc(17px - #{$border-width}) calc(45px - #{$border-width});
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  // padding: calc(17px - #{$border-width}) calc(45px - #{$border-width});
+  padding: calc(17px - #{$border-width}) 20px;
   font-size: 12px;
   letter-spacing: 1.85px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: #363636;
   border: #{$border-width} solid #000;
   outline: none;
   cursor: pointer;
   &--pink {
-    padding: 17px 45px;
+    // padding: 17px 45px;
+    padding: 17px 0;
     color: #FFFFFF;
     background-color: $color-pink;
     border: none;
