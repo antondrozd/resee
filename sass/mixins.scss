@@ -33,14 +33,14 @@
   list-style: none;
 }
 
-@mixin heading-shadow($content, $top, $left) {
+@mixin heading-shadow($content, $top, $left, $font-size:270px) {
   &::before {
     content: $content;
     position: absolute;
     top: $top;
     left: $left;
     font-family: $main-font;
-    font-size: 270px;
+    font-size: $font-size;
     color: $color-grey;
     opacity: 0.06;
     z-index: -1;

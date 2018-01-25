@@ -287,17 +287,20 @@ html(lang="en")
                 a.btn.brand__btn(href="#") 22 more products from this designer
                   include icons/arrow.jade
 
-        section.newsletter
+        article.newsletter
           .newsletter__wrapper
             .newsletter__inner
               h2.newsletter__title
                 span.newsletter__pretitle Join our
                 | Newsletter
-              form.newsletter__subscribe-form
+              form.newsletter__subscribe-form(method="post")
                 .newsletter__input-wrapper
-                  input(type="email" placeholder="Your email address")
-                button.btn.btn--pink(type="submit") Subscribe
+                  input(type="email" placeholder="Your email address" required)
+                button.btn.btn--pink.newsletter__btn(type="submit") Subscribe
                 p.newsletter__nospam No spam, we promies. We hate that too.
+
+        section.features
+          .features__wrapper
 
         secton.sell-with-us
           .sell-with-us__wrapper
