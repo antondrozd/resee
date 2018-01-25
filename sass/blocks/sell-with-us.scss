@@ -1,0 +1,62 @@
+.sell-with-us {
+
+}
+
+.sell-with-us__wrapper {
+  @include wrapper();
+}
+
+.sell-with-us__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 60px;
+}
+
+.sell-with-us__about {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 580px;
+  padding: 50px;
+  border: 2px solid $color-black;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -115px;
+    width: 212px;
+    height: 212px;
+    background-image: url("../img/sell-with-us-hanger.jpg");
+    transform: translateY(-50%);
+  }
+}
+
+.sell-with-us__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sell-with-us__comission {
+  margin-right: 35px;
+  font-family: "Helvetica";
+  font-size: 14px;
+  color: $color-grey;
+  line-height: 18px;
+  span {
+    display: block;
+    font-family: $main-font;
+    font-size: 60px;
+    line-height: normal;
+    color: $color-black;
+  }
+}
+
+.sell-with-us__btn {
+  align-self: flex-end;
+}

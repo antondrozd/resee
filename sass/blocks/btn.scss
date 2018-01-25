@@ -5,6 +5,7 @@ $border-width: "1.5px";
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  min-width: 180px;
   padding: calc(17px - #{$border-width}) 20px;
   font-size: 12px;
   letter-spacing: 1.85px;
