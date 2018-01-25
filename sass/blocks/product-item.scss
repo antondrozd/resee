@@ -1,5 +1,4 @@
 .product-item {
-  width: 212px;
   margin-bottom: 60px;
   &--horisontal {
     > a {
@@ -24,6 +23,7 @@
 
 .product-item__img-wrapper {
   position: relative;
+  display: flex;
   margin-bottom: 11px;
   text-align: center;
   box-shadow: 0 0 25px rgba(#000000, 0.1);

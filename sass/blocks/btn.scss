@@ -38,6 +38,7 @@ $border-width: "1.5px";
   svg {
     margin-left: 15px;
     * {
+      stroke: $color-black;
       transition: all 0.3s;
     }
   }

@@ -285,12 +285,19 @@ html(lang="en")
 
         section.newsletter
           .newsletter__wrapper
-            span.newsletter__pretitle Join our
-            h2.newsletter__title Newsletter
-            form.newsletter__subscribe-form
-              input(type="email" placeholder="Your email address")
-              button.btn.btn--pink(type="submit") Subscribe
-              p.newsletter__nospam No spam, we promies. We hate that too.
+            .newsletter__inner
+              h2.newsletter__title
+                span.newsletter__pretitle Join our
+                | Newsletter
+              form.newsletter__subscribe-form
+                .newsletter__input-wrapper
+                  input(type="email" placeholder="Your email address")
+                button.btn.btn--pink(type="submit") Subscribe
+                p.newsletter__nospam No spam, we promies. We hate that too.
+
+        secton.sell-with-us
+          .sell-with-us__wrapper
+            .sell-with-us__title Sell with us
 
       footer.page-footer
         .page-footer__wrapper

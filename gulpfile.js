@@ -16,7 +16,7 @@ var del = require('del');
 var jade = require('gulp-jade');
 
 gulp.task('jade', function() {
-  gulp.src('*.jade')
+  gulp.src('**/*.jade')
     .pipe(plumber())
     .pipe(jade())
     .pipe(gulp.dest('build'))
