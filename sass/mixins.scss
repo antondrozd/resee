@@ -32,3 +32,17 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin heading-shadow($content, $top, $left) {
+  &::before {
+    content: $content;
+    position: absolute;
+    top: $top;
+    left: $left;
+    font-family: $main-font;
+    font-size: 270px;
+    color: $color-grey;
+    opacity: 0.06;
+    z-index: -1;
+  }
+}

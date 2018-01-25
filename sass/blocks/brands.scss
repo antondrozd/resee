@@ -15,16 +15,7 @@
   line-height: 60px;
   font-weight: normal;
   color: $color-black;
-  &::before {
-    content: "Brands";
-    position: absolute;
-    top: -170px;
-    left: -70px;
-    font-family: $main-font;
-    font-size: 270px;
-    color: $color-grey;
-    opacity: 0.06;
-  }
+  @include heading-shadow("Brands", -170px, -70px);
 }
 
 .brands__list-wrapper {

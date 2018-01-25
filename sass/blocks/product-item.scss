@@ -2,15 +2,22 @@
   width: 212px;
   margin-bottom: 60px;
   &--horisontal {
-    display: flex;
-    .product-item__img-wrapper {
-      flex-shrink: 0;
-      width: 155px;
-      margin-bottom: 0;
-    }
-    .product-item__info {
-      align-self: flex-end;
-      padding-left: 40px;
+    > a {
+      display: flex;
+      text-decoration: none;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.03);
+      }
+      .product-item__img-wrapper {
+        flex-shrink: 0;
+        width: 155px;
+        margin-bottom: 0;
+      }
+      .product-item__info {
+        align-self: flex-end;
+        padding-left: 40px;
+      }
     }
   }
 }
