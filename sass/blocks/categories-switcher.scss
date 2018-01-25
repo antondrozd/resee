@@ -9,14 +9,35 @@
 .categories-switcher__list {
   @include ul-reset;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .categories-switcher__item {
-  flex-grow: 1;
-  a {
-    font-family: "Helvetica";
-    font-size: 14px;
-    text-decoration: none;
-    color: $color-black;
+  &:not(&--btn-wrapper) {
+    a {
+      display: block;
+      padding: 32px 12px;
+      font-family: "Helvetica";
+      font-size: 14px;
+      text-decoration: none;
+      color: $color-black;
+      transition: color 0.3s;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:hover {
+        color: $color-pink;
+      }
+    }
+  }
+  &--more {
+    a {
+      color: $color-pink !important;
+    }
+  }
+  &--btn-wrapper {
+    align-self: center;
   }
 }

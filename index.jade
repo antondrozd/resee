@@ -45,7 +45,7 @@ html(lang="en")
       main.page-content
         nav.main-nav
           .main-nav__wrapper
-            ul.main-nav__list.main-nav__list--first
+            ul.main-nav__list
               li.main-nav__item
                 a(href="#") New
               li.main-nav__item
@@ -58,18 +58,20 @@ html(lang="en")
                 a(href="#") Accessories
               li.main-nav__item
                 a(href="#") Gifts
-            ul.main-nav__list.main-nav__list--second
+              li.main-nav__item.main-nav__item--separator
               li.main-nav__item
-                a(href="#") The
+                a(href="#") The find
               li.main-nav__item
                 a(href="#") Inspiration
               li.main-nav__item
                 a(href="#") Collaborations
-            .main-nav__icons
-              a.main-nav__icon(href="#")
-                include icons/search.jade
-              a.main-nav__icon(href="#")
-                include icons/basket.jade
+              li.main-nav__item.main-nav__item--separator
+              li.main-nav__item
+                a.main-nav__icon(href="#")
+                  include icons/search.jade
+              li.main-nav__item
+                a.main-nav__icon(href="#")
+                  include icons/basket.jade
         .categories-switcher
           .categories-switcher__wrapper
             ul.categories-switcher__list
@@ -97,9 +99,11 @@ html(lang="en")
                 a(href="#") Jackets
               li.categories-switcher__item
                 a(href="#") Trench
-            a.categories-switcher__more(href="#") 4 more
-            a.btn(href="#") View all clothing
-              include icons/arrow.jade
+              li.categories-switcher__item.categories-switcher__item--more
+                a(href="#") 4 more
+              li.categories-switcher__item.categories-switcher__item--btn-wrapper
+                a.btn(href="#") View all clothing
+                  include icons/arrow.jade
 
         section.products
           .products__wrapper
