@@ -1,0 +1,29 @@
+.product-info__brand {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 2.25px;
+  text-transform: uppercase;
+  text-align: left;
+  color: $color-pink;
+}
+
+.product-info__inner {
+  padding-left: 13px;
+  text-align: left;
+  border-left: 2px solid #9B9A9A;
+}
+
+.product-info__name {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 13px;
+  color: #363636;
+}
+
+.product-info__price {
+  font-size: 13px;
+  color: $color-grey;
+}

@@ -1,0 +1,18 @@
+.feature-block {
+  &--big {
+
+  }
+}
+
+.feature-block__title {
+  margin: 0;
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 60px;
+}
+
+.feature-block__descr {
+  font-family: "Helvetica";
+  font-size: 16px;
+  line-height: 18px;
+}
