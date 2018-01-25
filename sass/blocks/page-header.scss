@@ -66,6 +66,16 @@
   font-size: 92px;
   font-weight: normal;
   color: #3B3B3B;
+  &::before {
+    content: "Prada";
+    position: absolute;
+    top: -70px;
+    left: 620px;
+    font-family: $main-font;
+    font-size: 272px;
+    color: #FFFFFF;
+    z-index: -1;
+  }
 }
 
 .page-header__product-name {

@@ -29,16 +29,16 @@ html(lang="en")
                 ul.page-header__more-list
                   li.page-header__more-item
                     a(href="#")
-                      img(src="img/product-3.png" alt="clothing-item")
+                      img(src="img/product-3.jpg" alt="clothing-item")
                   li.page-header__more-item
                     a(href="#")
-                      img(src="img/product-1.png" alt="clothing-item")
+                      img(src="img/product-1.jpg" alt="clothing-item")
                   li.page-header__more-item
                     a(href="#")
-                      img(src="img/product-2.png" alt="clothing-item")
+                      img(src="img/product-2.jpg" alt="clothing-item")
                   li.page-header__more-item
                     a(href="#")
-                      img(src="img/product-3.png" alt="clothing-item")
+                      img(src="img/product-3.jpg" alt="clothing-item")
                 a.btn.page-header__more-btn(href="#") Shop Prada
                   include icons/arrow.jade
 
@@ -107,7 +107,7 @@ html(lang="en")
             ul.products__list
               li.product-item
                 .product-item__img-wrapper
-                  img(src="img/product-1.png", alt="clothing-item")
+                  img(src="img/product-1.jpg", alt="clothing-item")
                   .product-item__overlay
                     span.product-item__add-to-favorite
                       include icons/add-to-favorite.jade
@@ -120,7 +120,7 @@ html(lang="en")
                     span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="img/product-2.png", alt="clothing-item")
+                  img(src="img/product-2.jpg", alt="clothing-item")
                   .product-item__overlay
                     span.product-item__add-to-favorite
                       include icons/add-to-favorite.jade
@@ -133,7 +133,7 @@ html(lang="en")
                     span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="img/product-3.png", alt="clothing-item")
+                  img(src="img/product-3.jpg", alt="clothing-item")
                   .product-item__overlay
                     span.product-item__add-to-favorite
                       include icons/add-to-favorite.jade
@@ -146,7 +146,7 @@ html(lang="en")
                     span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="img/product-3.png", alt="clothing-item")
+                  img(src="img/product-3.jpg", alt="clothing-item")
                   .product-item__overlay
                     span.product-item__add-to-favorite
                       include icons/add-to-favorite.jade
@@ -159,7 +159,7 @@ html(lang="en")
                     span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="img/product-1.png", alt="clothing-item")
+                  img(src="img/product-1.jpg", alt="clothing-item")
                   .product-item__overlay
                     span.product-item__add-to-favorite
                       include icons/add-to-favorite.jade
@@ -172,7 +172,7 @@ html(lang="en")
                     span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="img/product-2.png", alt="clothing-item")
+                  img(src="img/product-2.jpg", alt="clothing-item")
                   .product-item__overlay
                     span.product-item__add-to-favorite
                       include icons/add-to-favorite.jade
@@ -185,7 +185,7 @@ html(lang="en")
                     span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="img/product-3.png", alt="clothing-item")
+                  img(src="img/product-3.jpg", alt="clothing-item")
                   .product-item__overlay
                     span.product-item__add-to-favorite
                       include icons/add-to-favorite.jade
@@ -198,7 +198,7 @@ html(lang="en")
                     span.product-item__price €1400,00
               li.product-item
                 .product-item__img-wrapper
-                  img(src="img/product-3.png", alt="clothing-item")
+                  img(src="img/product-3.jpg", alt="clothing-item")
                   .product-item__overlay
                     span.product-item__add-to-favorite
                       include icons/add-to-favorite.jade
@@ -213,8 +213,8 @@ html(lang="en")
 
         section.brands
           .brands__wrapper
-            h2.brands__title Brands
             .brands__list-wrapper
+              h2.brands__title Brands
               ul.brands__list
                 li.brands__item
                   a(href="#") Alaïa
@@ -254,28 +254,32 @@ html(lang="en")
                   a(href="#") Christofle
                 li.brands__item
                   a(href="#") Christophe Lemaire
-              a.btn(href="#") All designers
-            .brand.brands__brand-wrapper
-              h3.brand__title Botega Veneta
-              span.brand__products-count 24 products
-              ul.brand__products
-                li.product-item.product-item--horisontal
-                  .product-item__img-wrapper
-                    img(src="img/product-1.png", alt="clothing-item")
-                  .product-item__info
-                    span.product-item__brand Botega Veneta
-                    .product-item__info-inner
-                      span.product-item__name Striped Lavaliere Blouse
-                      span.product-item__price €1400,00
-                li.product-item.product-item--horisontal
-                  .product-item__img-wrapper
-                    img(src="img/product-1.png", alt="clothing-item")
-                  .product-item__info
-                    span.product-item__brand Botega Veneta
-                    .product-item__info-inner
-                      span.product-item__name Striped Lavaliere Blouse
-                      span.product-item__price €1400,00
-              a.btn(href="#") 22 more products from this designer
+              a.btn.brands__btn(href="#") All designers
+            .brand
+              .brand__img-wrapper
+                img(src="img/brand.png" alt="Botega Veneta")
+              .brand__info-wrapper
+                h3.brand__title Botega Veneta
+                span.brand__products-count 24 products
+                ul.brand__products
+                  li.product-item.product-item--horisontal
+                    .product-item__img-wrapper
+                      img(src="img/brand-other-1.jpg", alt="clothing-item")
+                    .product-item__info
+                      span.product-item__brand Botega Veneta
+                      .product-item__info-inner
+                        span.product-item__name Striped Lavaliere Blouse
+                        span.product-item__price €1400,00
+                  li.product-item.product-item--horisontal
+                    .product-item__img-wrapper.product-item__img-wrapper--without-shadow
+                      img(src="img/brand-other-2.png", alt="clothing-item")
+                    .product-item__info
+                      span.product-item__brand Botega Veneta
+                      .product-item__info-inner
+                        span.product-item__name Striped Lavaliere Blouse
+                        span.product-item__price €1400,00
+                a.btn.brand__btn(href="#") 22 more products from this designer
+                  include icons/arrow.jade
 
         section.newsletter
           .newsletter__wrapper

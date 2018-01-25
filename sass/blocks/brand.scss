@@ -1,0 +1,34 @@
+.brand {
+  display: flex;
+}
+
+.brand__img-wrapper {
+  margin-right: 105px;
+}
+
+.brand__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.brand__title {
+  padding-top: 50px;
+  margin: 0;
+  margin-bottom: 17px;
+  font-size: 57px;
+  font-weight: normal;
+  color: $color-black;
+}
+
+.brand__products-count {
+  margin-bottom: 40px;
+}
+
+.brand__products {
+  @include ul-reset();
+}
+
+.brand__btn {
+  margin-top: auto;
+}

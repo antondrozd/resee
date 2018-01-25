@@ -1,0 +1,65 @@
+.brands {
+  position: relative;
+}
+
+.brands__wrapper {
+  @include wrapper-tight();
+  display: flex;
+}
+
+.brands__title {
+  max-width: 400px;
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: normal;
+  color: $color-black;
+  &::before {
+    content: "Brands";
+    position: absolute;
+    top: -170px;
+    left: -70px;
+    font-family: $main-font;
+    font-size: 270px;
+    color: $color-grey;
+    opacity: 0.06;
+  }
+}
+
+.brands__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 97px;
+}
+
+.brands__list {
+  @include ul-reset();
+  margin-bottom: 40px;
+}
+
+.brands__item {
+  a {
+    display: block;
+    padding: 5px 0;
+    font-size: 13px;
+    text-decoration: none;
+    color: $color-black;
+    transition: all 0.2s;
+  }
+  &:hover {
+    a {
+      color: $color-pink;
+    }
+  }
+  &--active {
+    a {
+      color: $color-pink;
+    }
+  }
+}
+
+.brands__btn {
+  width: 180px;
+  margin-top: auto;
+}
