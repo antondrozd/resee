@@ -26,6 +26,9 @@ $border-width: "1.5px";
       }
     }
   }
+  &:active {
+    opacity: 0.5;
+  }
   svg {
     margin-left: 15px;
     * {
