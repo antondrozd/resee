@@ -1,3 +1,23 @@
-For install all dependencies use the npm i command.
-For build project use npm run build command.
-For build project and start http-server use npm start command.
+# ReSee project
+
+### How to start
+
+```
+npm install
+npm start
+```
+
+### How to build
+
+```
+npm build
+```
+
+### Technologies
+
+- HTML5 with Jade
+- CSS3 with Sass
+- Gulp
+- BEM
+- SVG
+- Git
