@@ -1,5 +1,8 @@
 .product-item {
   margin-bottom: 60px;
+  &--call-to-action {
+    align-self: flex-start;
+  }
   &--horisontal {
     > a {
       display: flex;

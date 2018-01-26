@@ -26,6 +26,13 @@ $border-width: "1.5px";
       }
     }
   }
+  svg {
+    margin-left: 15px;
+    * {
+      stroke: $color-black;
+      transition: all 0.3s;
+    }
+  }
   &--pink {
     padding: calc(17px - #{$border-width}) 20px;
     color: #FFFFFF;
@@ -36,11 +43,12 @@ $border-width: "1.5px";
       background-color: transparent;
     }
   }
-  svg {
-    margin-left: 15px;
-    * {
-      stroke: $color-black;
-      transition: all 0.3s;
+  &--yellow {
+    color: $color-pink;
+    background-color: #FFF1B6;
+    border: none;
+    &:hover {
+      background-color: #F7E287;
     }
   }
 }
