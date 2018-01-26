@@ -1,7 +1,9 @@
-.features {
-
-}
-
 .features__wrapper {
   @include wrapper();
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
