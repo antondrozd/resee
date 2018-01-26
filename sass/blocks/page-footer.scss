@@ -37,6 +37,19 @@
   }
 }
 
+.page-footer__list-item {
+  &--more {
+    margin-top: 20px;
+    a {
+      text-transform: uppercase;
+      color: $color-pink;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
 .page-footer__link {
   text-decoration: none;
   color: $color-black;
