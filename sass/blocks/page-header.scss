@@ -28,6 +28,7 @@
     font-weight: bold;
     text-decoration: none;
     color: #000000;
+    transition: color 0.3s;
     &::after {
       content: "";
       position: absolute;
@@ -35,6 +36,13 @@
       bottom: -5px;
       left: 0;
       border-bottom: 2px solid $color-pink;
+      transition: opacity 0.3s;
+    }
+    &:hover {
+      color: $color-pink;
+      &::after {
+        opacity: 0;
+      }
     }
   }
 }
