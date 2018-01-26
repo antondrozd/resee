@@ -1,0 +1,35 @@
+.blockquote {
+  position: relative;
+  box-sizing: border-box;
+  width: 425px;
+  padding-left: 110px;
+  font-family: "Helvetica";
+}
+
+.blockquote__author {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.blockquote__photo-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+}
+
+.blockquote__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: $color-grey;
+  line-height: 20px;
+}
+
+.blockquote__more {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-pink;
+}

@@ -4,6 +4,8 @@ body {
   font-family: $main-font;
   background-color: #fff;
   color: $color-black;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
 }
 
 img {

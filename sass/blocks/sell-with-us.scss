@@ -1,13 +1,22 @@
+.sell-with-us {
+  position: relative;
+}
+
 .sell-with-us__wrapper {
   @include wrapper();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .sell-with-us__title {
+  width: 100%;
   margin: 0;
   margin-bottom: 40px;
   font-size: 44px;
   font-weight: normal;
   line-height: 60px;
+  @include heading-shadow("Sell with us", 220px, -320px, 170px, 90deg);
 }
 
 .sell-with-us__about {
@@ -18,6 +27,7 @@
   box-sizing: border-box;
   width: 580px;
   padding: 50px;
+  margin-right: 120px;
   border: 2px solid $color-black;
   &::after {
     content: "";
@@ -55,4 +65,10 @@
 
 .sell-with-us__btn {
   align-self: flex-end;
+}
+
+.sell-with-us__blockquote {
+  position: relative;
+  top: -65px;
+  align-self: flex-start;
 }

@@ -33,7 +33,7 @@
   list-style: none;
 }
 
-@mixin heading-shadow($content, $top, $left, $font-size:270px) {
+@mixin heading-shadow($content, $top, $left, $font-size:270px, $rotate-value:0) {
   &::before {
     content: $content;
     position: absolute;
@@ -43,6 +43,7 @@
     font-size: $font-size;
     color: $color-grey;
     opacity: 0.06;
+    transform: rotate($rotate-value);
     z-index: -1;
   }
 }
