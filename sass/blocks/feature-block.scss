@@ -75,6 +75,14 @@
 
 .feature-block__designer {
   padding: 5px 0;
+  a {
+    text-decoration: none;
+    color: $color-black;
+    transition: color 0.3s;
+    &:hover {
+      color: $color-pink;
+    }
+  }
 }
 
 .feature-block__product-info {
